@@ -49,4 +49,3 @@
 * List Skills (instructions link)
 * To Do List (bullet list with 10 items)
 * Github Repos - student code, instructor code
-

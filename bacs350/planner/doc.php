@@ -10,7 +10,7 @@
 
 
     // Use the views code
-    require_once 'views.php';
+    require_once '../views.php';
 
 
     // Read Markdown Text from file

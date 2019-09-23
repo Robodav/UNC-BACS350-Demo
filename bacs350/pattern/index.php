@@ -30,15 +30,6 @@
             <li>
                 <a href="render_page">Render Page Pattern</a>
             </li>
-            <li>
-                <a href="redirect">Redirect Page Pattern</a>
-            </li>
-            <li>
-                <a href="phpinfo">Display PHP Info</a>
-            </li>
-            <li>
-                <a href="card_view">Card View Pattern</a>
-            </li>
         </ul>
     ';
 

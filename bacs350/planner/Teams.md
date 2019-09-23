@@ -40,4 +40,3 @@
 
     34  Devin Panikkar      devin.panikkar@unco.edu     http://devin-panikkar.com
     36  Angel Rivera        rive4151@bears.unco.edu     http://avrg98.com
-

@@ -55,3 +55,7 @@ header img {
     color: white;
     background-color: #0E3D65;
 }
+
+.card-image img {
+    padding: 10px;
+}
