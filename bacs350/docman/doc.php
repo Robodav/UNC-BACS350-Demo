@@ -23,6 +23,6 @@
 
 
     // Display the HTML in the page
-    echo render_page('Seaman Notes', "Document Manager", $home . $content);
+    echo render_page('Dav Notes', "Document Manager", $home . $content);
 
 ?>

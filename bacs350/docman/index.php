@@ -31,6 +31,6 @@
 
 
     // Display the HTML in the page
-    echo render_page('Seaman Notes', "Document Manager", $card);
+    echo render_page('Dav Notes', "Document Manager", $card);
 
 ?>
