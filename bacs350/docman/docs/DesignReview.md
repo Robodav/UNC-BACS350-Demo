@@ -12,14 +12,14 @@
 ### Design Team
 * Designer: George Washington
 * Reviewer: Abe Lincoln
-* Page: [bacs350/superhero](https://unco-bacs.org/bacs350/superhero)
+* Page: [bacs350/superhero](https://dvandiver.com/bacs350/superhero)
 * Due: Sep 16, 2019
 * Review Date: Never
 
 
 ### Requirements Scorecard (Score 0)
 
-#### FAIL - Page exists at [bacs350/superhero](https://unco-bacs.org/bacs350/superhero)
+#### FAIL - Page exists at [bacs350/superhero](https://dvandiver.com/bacs350/superhero)
 
 * This link connects to page
 * Content of page discusses Superhero
@@ -35,14 +35,14 @@ Notes for corrections needed
 Notes for corrections needed
 
 
-#### FAIL - Page exists at [WordPress Blog](https://unco-bacs.org)
+#### FAIL - Page exists at [WordPress Blog](https://dvandiver.com)
 
 * The Superhero and WordPress pages must coexist
 
 Notes for corrections needed
 
 
-#### FAIL - Page exists at [Home Page](https://unco-bacs.org/bacs350)
+#### FAIL - Page exists at [Home Page](https://dvandiver.com/bacs350)
 
 * The Superhero and Home pages must coexist
 * Home page should contain profile picture
@@ -77,14 +77,14 @@ Notes for corrections needed
 
 #### FAIL - Superhero Page Validates
 
-* The HTML Validator passes with [bacs350/superhero](https://unco-bacs.org/bacs350/superhero)
+* The HTML Validator passes with [bacs350/superhero](https://dvandiver.com/bacs350/superhero)
 
 Notes for corrections needed
 
 
 #### FAIL - Home Page Validates
 
-* The HTML Validator passes with [bacs350](https://unco-bacs.org/bacs350)
+* The HTML Validator passes with [bacs350](https://dvandiver.com/bacs350)
 
 Notes for corrections needed
 

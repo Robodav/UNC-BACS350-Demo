@@ -17,7 +17,7 @@ DocMan is a PHP app that is a part of The Brain App.
 
 It has a nice UI that lets you create documents in Markdown and display them through the Bluehost web pages.
 
-The opening page of DocMan at **[DocMan app](https://unco-bacs.org/bacs350/docman)**.
+The opening page of DocMan at **[DocMan app](https://dvandiver.com/bacs350/docman)**.
 
 This page displays a list of all of the Documents in the system as hyperlinks.
 

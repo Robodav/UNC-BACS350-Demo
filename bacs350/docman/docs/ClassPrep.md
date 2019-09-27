@@ -25,7 +25,7 @@ Needed Skills
     * 03 - Version Control
     * 04 - Share Code Files
     * 05 - Setup Apache
-* Demo (unco-bacs.org/bacs350/demo/)
+* Demo (dvandiver.com/bacs350/demo/)
     * 11 - Passing Variables as Query Parameters
     * 12 - List dirs and files
     * 13 - Directory Listing
