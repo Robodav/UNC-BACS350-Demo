@@ -46,13 +46,13 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-8">
-                                    <h1>' . $site_title . '</h1>
                                     <h2>' . $page_title . '</h2>
+                                    <h1>' . $site_title . '</h1>
                                 </div>
                                 <div class="logo col-sm-4">
                                     <div class="pull-right">
                                         <img class="img-rounded img-responsive"
-                                        src="/bacs350/images/Bear.200.png"
+                                        src="/bacs350/images/doc.png"
                                         alt="UNC Bear" width="150px">
                                     </div>
                                 </div>

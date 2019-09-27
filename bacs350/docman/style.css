@@ -5,10 +5,12 @@ body {
 
 h1 {
     color: rgb(14, 101, 40);
+    font-family: sans-serif;
 }
 
 h2 {
     color: #F6B018;
+    font-family: sans-serif;
 }
 
 hr {
@@ -36,6 +38,7 @@ pre {
 .card-header {
     padding: 10px;
     font-weight: bold;
+    font-family: sans-serif;
     color: rgb(177, 177, 177);
     background-color: rgb(14, 101, 40);
 }
