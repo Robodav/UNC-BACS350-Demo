@@ -6,7 +6,11 @@
 
     $site_title = 'UNC BACS 350';
     
+<<<<<<< HEAD
     $page_title = "Dav's Brain";
+=======
+    $page_title = "Mark's Demos";
+>>>>>>> upstream/master
     
     $content = '
         <p>
@@ -24,45 +28,48 @@
         
         <ul>
             <li>
-                <a href="01">Lesson #1 - PHP App Hosting</a>
+                <a href="01">Demo #1 - PHP App Hosting</a>
             </li>
             <li>
-                <a href="02">Lesson #2 - Includes</a>
+                <a href="02">Demo #2 - Includes</a>
             </li>
             <li>
-                <a href="03">Lesson #3 - Header/Footer</a>
+                <a href="03">Demo #3 - Header/Footer</a>
             </li>
             <li>
-                <a href="04">Lesson #4 - Page Template</a>
+                <a href="04">Demo #4 - Page Template</a>
             </li>
             <li>
-                <a href="05">Lesson #5 - Render Page</a>
+                <a href="05">Demo #5 - Render Page</a>
             </li>
 <<<<<<< HEAD
 =======
             <li>
-                <a href="06">Lesson #6 - Setup Apache, MySQL, PHP</a>
+                <a href="06">Demo #6 - Setup Apache, MySQL, PHP</a>
             </li>
             <li>
-                <a href="07">Lesson #7 - Card View</a>
+                <a href="07">Demo #7 - Card View</a>
             </li>
             <li>
-                <a href="08">Lesson #8 - </a>
+                <a href="08">Demo #8 - Reusable Page Template</a>
             </li>
             <li>
-                <a href="09">Lesson #9 - </a>
+                <a href="09">Demo #9 - Display PHP Source Code</a>
             </li>
             <li>
-                <a href="10">Lesson #10 - Markdown</a>
+                <a href="10">Demo #10 - Markdown</a>
             </li>
             <li>
-                <a href="11">Lesson #11 - Document Viewer</a>
+                <a href="11">Demo #11 - Document Viewer</a>
             </li>
             <li>
-                <a href="12">Lesson #12 - Document Listing</a>
+                <a href="12">Demo #12 - Document Listing</a>
             </li>
             <li>
-                <a href="13">Lesson #13 - Document Selector</a>
+                <a href="13">Demo #13 - Document Selector</a>
+            </li>
+            <li>
+                <a href="14">Demo #14 - Document Browser</a>
             </li>
 >>>>>>> upstream/master
         </ul>

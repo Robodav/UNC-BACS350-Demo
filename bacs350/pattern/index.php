@@ -30,6 +30,21 @@
             <li>
                 <a href="render_page">Render Page Pattern</a>
             </li>
+<<<<<<< HEAD
+=======
+            <li>
+                <a href="redirect">Redirect Page Pattern</a>
+            </li>
+            <li>
+                <a href="phpinfo">Display PHP Info</a>
+            </li>
+            <li>
+                <a href="card_view">Card View Pattern</a>
+            </li>
+             <li>
+                <a href="doclinks">Doc Links Pattern</a>
+            </li>
+>>>>>>> upstream/master
         </ul>
     ';
 
