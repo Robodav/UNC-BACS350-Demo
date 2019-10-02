@@ -17,9 +17,9 @@
 
         $port = '3306';
         $dbname = 'uncobacs_subscribers';
-        $db_connect = "mysql:host=unco-bacs.org:$port;dbname=$dbname";
-        $username = 'uncobacs_350';
-        $password = 'BACS_350';
+        $db_connect = "mysql:host=localhost:$port;dbname=$dbname";
+        $username = 'dvandive_robodav';
+        $password = 'BACS350';
         return db_connect($db_connect, $username, $password);
 
     }

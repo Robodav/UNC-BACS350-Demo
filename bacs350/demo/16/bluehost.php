@@ -3,11 +3,11 @@
     // Use the proper settings to connect to the Bluehost database
 
     $port = '3306';
-    $dbname = 'uncobacs_subscribers';
+    $dbname = 'dvandive_subscribers';
     $db_connect = "mysql:host=localhost:$port;dbname=$dbname";
     
-    $username = 'uncobacs_350';
-    $password = 'BACS_350';
+    $username = 'dvandive_robodav';
+    $password = 'BACS350';
 
     echo "<h1>Connect to Bluehost Database</h1>
           <p>Database: $dbname</p>
