@@ -14,9 +14,9 @@
 
     // Connect subscriber database
     $port = '3306';
-    $dbname = 'uncobacs_subscribers';
+    $dbname = 'dvandive_subscribers';
     $db_connect = "mysql:host=localhost:$port;dbname=$dbname";
-    $username = 'uncobacs_350';
+    $username = 'dvandive_robodav';
     $password = 'BACS_350';
     
     echo "<h1>$db_connect</h1>";
