@@ -83,6 +83,12 @@
             <li>
                 <a href="17">Demo #17 - List Database Records</a>
             </li>
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+            <li>
+                <a href="18">Demo #18 - Database CRUD</a>
+            </li>
 >>>>>>> upstream/master
         </ul>
     ';
