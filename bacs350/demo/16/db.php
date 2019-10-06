@@ -18,13 +18,8 @@
         $port = '3306';
         $dbname = 'uncobacs_subscribers';
         $db_connect = "mysql:host=localhost:$port;dbname=$dbname";
-<<<<<<< HEAD
         $username = 'dvandive_robodav';
         $password = 'BACS350';
-=======
-        $username = 'uncobacs_350';
-        $password = 'BACS_350';
->>>>>>> upstream/master
         return db_connect($db_connect, $username, $password);
 
     }

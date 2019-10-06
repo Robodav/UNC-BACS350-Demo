@@ -17,7 +17,7 @@
     $dbname = 'dvandive_subscribers';
     $db_connect = "mysql:host=localhost:$port;dbname=$dbname";
     $username = 'dvandive_robodav';
-    $password = 'BACS_350';
+    $password = 'BACS350';
     
     echo "<h1>$db_connect</h1>";
     

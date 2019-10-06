@@ -6,7 +6,7 @@
         $dbname = 'dvandive_subscribers';
         $db_connect = "mysql:host=localhost:$port;dbname=$dbname";
         $username = 'dvandive_robodav';
-        $password = 'BACS_350';
+        $password = 'BACS350';
         return new PDO($db_connect, $username, $password);
     }
 
