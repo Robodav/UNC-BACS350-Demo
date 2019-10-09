@@ -1,24 +1,22 @@
-<h1>Subscriber Database</h1>
+<?php
 
-<p>This page demonstrates a connection to an actual database at Bluehost.</p>
+    include 'views.php';
 
-<h2>Step 1 - Simple page</h2>
+    // Connect to the subscribers database at Bluehost
+    require 'subscriber.php';
 
-<p>
-    <b></b> Start by building and debugging a page that looks like this one.
-    Get this working first!
-</p>
-<p>
-    <a href="step1.php">Subscribers Page</a>
-</p>
+    $site_title = 'dvandiver';
+    $page_title = 'Subscribers Database';
+    
+    // Get a list of subscribers records
+    $subscribers = query_subscribers($db);
 
-<h2>Step 2 - Normal page</h2>
 
-<p>
-    The simple solution will duplicate a lot of code
-    on a real website so it is not suitable for production websites. Build functions
-    for all of the key operations that should be done.
-</p>
-<p>
-    <a href="step2.php">Subscribers Page</a>
-</p>
+    // Build a list of subscribers in HTML
+    $content = render_subscriber_list($subscribers);
+
+    echo render_page($site_title, $page_title, $content);
+    
+?>
+
+<p><b>Success !!</b></p>
