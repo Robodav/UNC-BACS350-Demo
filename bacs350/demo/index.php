@@ -89,6 +89,18 @@
             <li>
                 <a href="18">Demo #18 - Database CRUD</a>
             </li>
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+            <li>
+                <a href="19">Demo #19 - CRUD Functions</a>
+            </li>
+            <li>
+                <a href="20">Demo #20 - CRUD Views</a>
+            </li>
+            <li>
+                <a href="21">Demo #21 - CRUD Views</a>
+            </li>
 >>>>>>> upstream/master
         </ul>
     ';
