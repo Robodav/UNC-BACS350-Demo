@@ -5,15 +5,14 @@
     ------------------------------- */
 
     // Add a new record
-    function add_superhero($db, $name, $aka, $image, $description) {
+    function add_superhero($db, $name, $description, $image) {
         try {
-            $query = "INSERT INTO superheroes (name, aka, image, description) 
-                      VALUES (:name, :aka, :image, :description);";
+            $query = "INSERT INTO superheroes (name, description, image) 
+                      VALUES (:name, :description, :image);";
             $statement = $db->prepare($query);
             $statement->bindValue(':name', $name);
-            $statement->bindValue(':aka', $aka);
-            $statement->bindValue(':image', $image);
             $statement->bindValue(':description', $description);
+            $statement->bindValue(':image', $image);
             $statement->execute();
             $statement->closeCursor();
             return true;
@@ -96,9 +95,9 @@
 
     // Connect to the Bluehost database
     function bluehost_connect() {
-        $dbname = 'uncobacs_superhero';
-        $username = 'uncobacs_350';
-        $password = 'BACS_350';
+        $dbname = 'dvandive_superheroes';
+        $username = 'dvandive_robodav';
+        $password = 'BACS350';
         $port = '3306';
         $host = "localhost:$port";
         return superhero_database($host, $dbname, $username, $password);

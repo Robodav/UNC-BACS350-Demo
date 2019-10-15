@@ -8,11 +8,11 @@
 
     // Pick out the inputs
     $name = filter_input(INPUT_GET, 'name');
-    $aka = filter_input(INPUT_GET, 'aka');
-    $image = filter_input(INPUT_GET, 'image');
     $description = filter_input(INPUT_GET, 'description');
+    $image = filter_input(INPUT_GET, 'image');
+    
 
-    if ($name == '' || $aka == '' || $image == '' || $description == '') {
+    if ($name == '' || $description == '' || $image == '') {
         
         // Form view to add superhero
         $add_form = add_superhero_form();
@@ -26,12 +26,12 @@
         $intro = 'This form collects data to create a superhero record in the database.';
         $content = "$intro $list $add_form $clear_button";
 
-        echo render_page('UNC BACS 350', "Add Subscriber", $content);
+        echo render_page('dvandive', "Add Subscriber", $content);
     }
 
 
     // Add record and return to list
-    if (add_superhero ($db, $name, $aka, $image, $description))
+    if (add_superhero ($db, $name, $description, $image))
     {
         header("Location: index.php");
     };
