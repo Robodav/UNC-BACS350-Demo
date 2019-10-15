@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
     require_once '../views.php';
+=======
+    require '../views.php';
+>>>>>>> a0fde8e360d26e4bb97c1785847fb0c40f73108b
 
     // Connect to the Bluehost database for subscribers
     function superhero_db() {
