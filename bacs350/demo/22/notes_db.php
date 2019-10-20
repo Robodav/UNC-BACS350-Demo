@@ -5,29 +5,28 @@
     ------------------------------- */
 
     // Add a new record
-    function add_superhero($db, $name, $description, $image) {
+    function add_note($db, $title, $body, $date) {
         try {
-            $query = "INSERT INTO superheroes (name, description, image) 
-                      VALUES (:name, :description, :image);";
+            $query = "INSERT INTO notes (title, body, date) VALUES (:title, :body, :date);";
             $statement = $db->prepare($query);
-            $statement->bindValue(':name', $name);
-            $statement->bindValue(':description', $description);
-            $statement->bindValue(':image', $image);
+            $statement->bindValue(':title', $title);
+            $statement->bindValue(':body', $body);
+            $statement->bindValue(':date', $date);
             $statement->execute();
             $statement->closeCursor();
             return true;
         } catch (PDOException $e) {
             $error_message = $e->getMessage();
             echo "<p>Error: $error_message</p>";
-            // die();
+            die();
         }
     }
 
 
      // Lookup Record using ID
-    function get_superhero($db, $id) {
+    function get_note($db, $id) {
         try {
-            $query = "SELECT * FROM superheroes WHERE id = :id";
+            $query = "SELECT * FROM notes WHERE id = :id";
             $statement = $db->prepare($query);
             $statement->bindValue(':id', $id);
             $statement->execute();
@@ -43,10 +42,10 @@
     }
        
 
-    // Query for all superheros
-    function list_superheroes ($db) {
+    // Query for all notes
+    function list_notes ($db) {
        try {
-            $query = "SELECT * FROM superheroes";
+            $query = "SELECT * FROM notes";
             $statement = $db->prepare($query);
             $statement->execute();
             return $statement->fetchAll();
@@ -60,9 +59,9 @@
 
 
     // Delete Database Record
-    function delete_superhero($db, $id) {
+    function delete_note($db, $id) {
         try {
-            $query = "DELETE from superheroes WHERE id = :id";
+            $query = "DELETE from notes WHERE id = :id";
             $statement = $db->prepare($query);
             $statement->bindValue(':id', $id);
             $statement->execute();
@@ -76,12 +75,39 @@
     }
 
 
+    // Update the database
+    function update_note ($db, $id, $title, $body, $date) {
+        try {
+            // Modify database row
+            $query = "UPDATE notes SET title=:title, body=:body, date=:date WHERE id = :id";
+            $statement = $db->prepare($query);
+
+            $statement->bindValue(':id', $id);
+            $statement->bindValue(':title', $title);
+            $statement->bindValue(':body', $body);
+            $statement->bindValue(':date', $date);
+
+            $statement->execute();
+            $statement->closeCursor();
+
+            return true;
+        } catch (PDOException $e) {
+            $error_message = $e->getMessage();
+            echo "<p>Error: $error_message</p>";
+            die();
+        }
+        
+    }
+
+
+
+
     /* -------------------------------
         DATABASE CONNECT
     ------------------------------- */
 
     // Connect to Bluehost database 
-    function superhero_database($host, $dbname, $username, $password) {
+    function note_database($host, $dbname, $username, $password) {
         try {
             $db_connect = "mysql:host=$host;dbname=$dbname";
             return new PDO($db_connect, $username, $password);
@@ -95,12 +121,12 @@
 
     // Connect to the Bluehost database
     function bluehost_connect() {
-        $dbname = 'dvandive_superheroes';
-        $username = 'dvandive_robodav';
-        $password = 'BACS350';
+        $dbname = 'uncobacs_350';
+        $username = 'uncobacs_350';
+        $password = 'BACS_350';
         $port = '3306';
         $host = "localhost:$port";
-        return superhero_database($host, $dbname, $username, $password);
+        return note_database($host, $dbname, $username, $password);
     }
 
 
