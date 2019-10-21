@@ -1,7 +1,7 @@
 <?php
 
     // Code to define functions
-    require_once 'views.php';
+    include '../views.php';
     require_once 'superhero_views.php';
     require_once 'superhero_db.php';
 
@@ -35,5 +35,7 @@
     {
         header("Location: index.php");
     };
+
+    // echo render_page('dvandive', "Add Subscriber", $content);
  
 ?>
