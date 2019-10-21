@@ -98,9 +98,18 @@
             <li>
                 <a href="20">Demo #20 - CRUD Views</a>
             </li>
+<<<<<<< HEAD
             <li>
-                <a href="21">Demo #21 - CRUD Views</a>
+                <a href="21">Demo #21 - Add Views</a>
             </li>
+            <li>
+                <a href="22">Demo #22 - Edit Views</a>
+            </li>
+            <li>
+                <a href="23">Demo #23 - Page Logging</a>
+            </li>
+=======
+>>>>>>> a0fde8e360d26e4bb97c1785847fb0c40f73108b
 >>>>>>> upstream/master
         </ul>
     ';

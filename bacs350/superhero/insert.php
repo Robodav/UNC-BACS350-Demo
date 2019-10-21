@@ -28,14 +28,5 @@
 
         echo render_page('dvandive', "Add Subscriber", $content);
     }
-
-
-    // Add record and return to list
-    if (add_superhero ($db, $name, $description, $image))
-    {
-        header("Location: index.php");
-    };
-
-    // echo render_page('dvandive', "Add Subscriber", $content);
  
 ?>

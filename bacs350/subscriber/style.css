@@ -42,6 +42,7 @@ header img {
     padding: 0;
 }
 
+<<<<<<< HEAD
 h1 {
     color: #0E3D65;
 }
@@ -64,6 +65,8 @@ pre {
     border-radius: 10px;
     padding: 10px;
 }
+=======
+>>>>>>> a0fde8e360d26e4bb97c1785847fb0c40f73108b
 
 .card {
     margin: 20px;
@@ -77,3 +80,10 @@ pre {
     color: white;
     background-color: #0E3D65;
 }
+<<<<<<< HEAD
+=======
+
+.card-image img {
+    padding: 10px;
+}
+>>>>>>> a0fde8e360d26e4bb97c1785847fb0c40f73108b

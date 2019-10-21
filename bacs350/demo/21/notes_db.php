@@ -23,7 +23,7 @@
     }
 
 
-     // Lookup Record using ID
+    // Lookup Record using ID
     function get_note($db, $id) {
         try {
             $query = "SELECT * FROM notes WHERE id = :id";
@@ -75,6 +75,7 @@
     }
 
 
+    
     /* -------------------------------
         DATABASE CONNECT
     ------------------------------- */

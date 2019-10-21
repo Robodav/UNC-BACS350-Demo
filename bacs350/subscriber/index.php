@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
     // Code to define functions
     require_once 'views.php';
     require_once 'subscriber_views.php';
@@ -27,3 +28,25 @@
     // Show the page
     echo render_page('UNC BACS 350', "Seaman's List Subscribers", $content);
 ?>
+=======
+    include 'views.php';
+
+    // Connect to the subscribers database at Bluehost
+    require 'subscriber.php';
+
+    $site_title = 'dvandiver';
+    $page_title = 'Subscribers Database';
+    
+    // Get a list of subscribers records
+    $subscribers = query_subscribers($db);
+
+
+    // Build a list of subscribers in HTML
+    $content = render_subscriber_list($subscribers);
+
+    echo render_page($site_title, $page_title, $content);
+    
+?>
+
+<p><b>Success !!</b></p>
+>>>>>>> a0fde8e360d26e4bb97c1785847fb0c40f73108b
