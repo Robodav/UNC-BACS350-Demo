@@ -26,7 +26,7 @@
         $intro = 'This form collects data to create a superhero record in the database.';
         $content = "$intro $list $add_form $clear_button";
 
-        echo render_page('dvandive', "Add Subscriber", $content);
+        echo render_page('dvandive', "Add Superhero", $content);
     }
  
 ?>
