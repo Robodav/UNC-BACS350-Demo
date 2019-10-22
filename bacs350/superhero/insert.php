@@ -1,7 +1,7 @@
 <?php
 
     // Code to define functions
-    require_once 'views.php';
+    include '../views.php';
     require_once 'superhero_views.php';
     require_once 'superhero_db.php';
 
@@ -26,24 +26,7 @@
         $intro = 'This form collects data to create a superhero record in the database.';
         $content = "$intro $list $add_form $clear_button";
 
-        echo render_page('dvandive', "Add Subscriber", $content);
+        echo render_page('dvandive', "Add Superhero", $content);
     }
-<<<<<<< HEAD
-
-
-    // Add record and return to list
-    if (add_superhero ($db, $name, $description, $image))
-    {
-        header("Location: index.php");
-    };
-=======
-    else {
-        // Add record and return to list
-        if (add_superhero ($db, $name, $aka, $image, $description))
-        {
-            header("Location: index.php");
-        };
-    }
->>>>>>> upstream/master
  
 ?>

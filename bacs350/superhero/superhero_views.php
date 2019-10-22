@@ -16,7 +16,8 @@
                 <p><input class="button" type="submit" value="Add Superhero"/></p>
             </form>
             ';
-        return render_card($title, $body);
+        $photo = "";
+        return render_card($title, $body, $photo);
     }
 
 
@@ -35,7 +36,7 @@
                     <tr><td>Notes:</td><td>$row[description]</td></tr>
                     <tr><td>Record $row[id]</td><td>$delete</td></tr>
                 </table>";
-            $html = $html . render_card($title, $body);
+            $html = $html . render_card($title, $body, $photo);
         }
         return $html;
     }

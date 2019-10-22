@@ -108,8 +108,14 @@
             <li>
                 <a href="23">Demo #23 - Page Logging</a>
             </li>
+<<<<<<< HEAD
 =======
 >>>>>>> a0fde8e360d26e4bb97c1785847fb0c40f73108b
+>>>>>>> upstream/master
+=======
+            <li>
+                <a href="24">Demo #24 - Review App</a>
+            </li>
 >>>>>>> upstream/master
         </ul>
     ';
