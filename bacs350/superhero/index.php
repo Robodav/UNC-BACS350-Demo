@@ -16,7 +16,7 @@
 
     // Get a list of subscribers records
     $superheroes = query_superheroes($db);
-    $superslist = render_superhero_list($superheroes);
+    $superslist = render_superheroes($superheroes);
 
 
     // Build a list of subscribers in HTML

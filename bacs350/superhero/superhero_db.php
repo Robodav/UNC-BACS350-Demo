@@ -62,9 +62,9 @@
     // Delete Database Record
     function delete_superhero($db, $id) {
         try {
-            $query = "DELETE from superheroes WHERE id = :id";
+            $query = "DELETE from superheroes WHERE name = :name";
             $statement = $db->prepare($query);
-            $statement->bindValue(':id', $id);
+            $statement->bindValue(':name', $id);
             $statement->execute();
             $statement->closeCursor();
             return true;

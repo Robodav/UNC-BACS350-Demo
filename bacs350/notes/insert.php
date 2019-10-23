@@ -23,7 +23,7 @@
 
         // Display the HTML in the page
         $content = "$add_form $clear_button";
-        echo render_page('UNC BACS 350', "Add Note", $content);
+        echo render_page('dvandiver', "Add Note", $content);
     }
     else {
         

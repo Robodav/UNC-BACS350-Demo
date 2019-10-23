@@ -46,7 +46,6 @@
             <div class="card">
                 <div class="card-header">
                     ' . $title . '
-                    <p><a class="button" href="delete.php">Delete Superhero</a></p>
                 </div>
                 <div class="card-body card-padding">
                     ' . $body . '

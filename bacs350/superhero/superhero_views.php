@@ -26,12 +26,10 @@
         $html = '';
         foreach($superheroes as $row) {
             $title = $row['name'];
-            $delete = "<a href='delete.php?id=$row[id]'>Delete Record</a>";
-            $photo = "<img src='$row[image]' alt='$row[image]'>";
+            $delete = "<a href='delete.php?name=$row[name]'>Delete Record</a>";
+            $photo = $row['image'];
             $body = "
                 <table class='table table-hover'>
-                    <tr><td>$photo</td></tr>
-                    <tr><td>Superhero:</td><td>$row[aka]</td></tr>
                     <tr><td>Name:</td><td>$title</td></tr>
                     <tr><td>Notes:</td><td>$row[description]</td></tr>
                     <tr><td>Record $row[id]</td><td>$delete</td></tr>
@@ -40,5 +38,6 @@
         }
         return $html;
     }
+    
     
 ?>
