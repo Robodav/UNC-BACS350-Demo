@@ -32,6 +32,18 @@
             <li>
                 <a href="project">Projects</a>
             </li>
+            <li>
+                <a href="docman">Docman</a>
+            </li>
+            <li>
+                <a href="superhero">Superheroes</a>
+            </li>
+            <li>
+                <a href="subscriber">Subscriber</a>
+            </li>
+            <li>
+                <a href="notes">Notes</a>
+            </li>
         </ul>
     ';
 

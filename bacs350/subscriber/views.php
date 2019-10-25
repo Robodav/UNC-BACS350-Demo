@@ -39,7 +39,6 @@
             </html>
         ';
     }
-<<<<<<< HEAD:bacs350/superhero/views.php
     // render_card -- build HTML text for a card
     function render_card($title, $body) {
         return '
@@ -54,7 +53,3 @@
         ';
     }
 ?>
-=======
-
-?>
->>>>>>> a0fde8e360d26e4bb97c1785847fb0c40f73108b:bacs350/subscriber/views.php
