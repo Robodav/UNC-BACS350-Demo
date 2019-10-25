@@ -34,12 +34,32 @@ function add_log($db, $text) {
     }
 }
 
-// Query for all subscribers
+// Delete all logs
+function delete_logs($db) {
+    $query = "DELETE FROM log";
+    $statement = $log->prepare($query);
+    $row_count = $statement->execute();
+    return true;
+}
+
+// Query for all logs
 function query_logs($db) {
     $query = "SELECT * FROM log";
     $statement = $db->prepare($query);
     $statement->execute();
     return $statement->fetchAll();
+}
+
+// render_log_list -- Create a bullet list in HTML
+function render_log_list($logs) {
+    $s = '<ul>';
+    foreach($logs as $row) {
+        $date = "Date: <b>$row[date]</b>";
+        $text = "$row[text]";
+        $s .= "<li>$date : $text</li>";
+    }
+    $s .= '</ul>';
+    return $s;
 }
 
    /* -------------------------------
