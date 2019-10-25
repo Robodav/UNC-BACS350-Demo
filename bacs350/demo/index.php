@@ -6,11 +6,7 @@
 
     $site_title = 'UNC BACS 350';
     
-<<<<<<< HEAD
     $page_title = "Dav's Brain";
-=======
-    $page_title = "Mark's Demos";
->>>>>>> upstream/master
     
     $content = '
         <p>
