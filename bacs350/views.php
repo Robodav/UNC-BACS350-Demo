@@ -25,7 +25,7 @@
                                     <div class="pull-right">
                                         <img class="img-rounded img-responsive"
                                         src="/bacs350/images/David-Vandiver.jpg"
-                                        alt="David Vandiver" width="150px">
+                                        alt="David Vandiver" width="150">
                                     </div>
                                 </div>
                             </div>

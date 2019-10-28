@@ -27,6 +27,9 @@
         
         <ul>
             <li>
+                <a href="https://shrinking-world.com/unc/bacs350">Sensei Class Site</a>
+            </li>
+            <li>
                 <a href="demo">Code Demos</a>
             </li>
             <li>
