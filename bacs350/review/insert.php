@@ -1,7 +1,6 @@
 <?php
 
     // Code to define functions
-    require_once 'views.php';
     require_once 'review_views.php';
     require_once 'review_db.php';
 
@@ -22,7 +21,7 @@
 
         
         // Display the HTML in the page
-        echo render_page('UNC BACS 350', "Add Review", $add_form);
+        echo render_page('dvandiver', "Add Review", $add_form);
     }
     else {
         
