@@ -1,6 +1,0 @@
-[25-Oct-2019 19:12:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on array in /home3/dvandive/public_html/bacs350/log/log.php:49
-Stack trace:
-#0 /home3/dvandive/public_html/bacs350/log/log.php(62): query_logs(Array)
-#1 /home3/dvandive/public_html/bacs350/log/index.php(12): render_log(Array)
-#2 {main}
-  thrown in /home3/dvandive/public_html/bacs350/log/log.php on line 49

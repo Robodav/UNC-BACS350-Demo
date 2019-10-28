@@ -50,7 +50,7 @@
             $date = date('Y-m-d g:i:s a');
             
             // Add database row
-            $query = "INSERT INTO log (date, text) VALUES (:date, :text);";
+            $query = "INSERT INTO logs (date, text) VALUES (:date, :text);";
             $statement = $log->prepare($query);
             $statement->bindValue(':date', $date);
             $statement->bindValue(':text', $text);
@@ -69,7 +69,7 @@
     function clear_log($log) {
         
         try {
-            $query = "DELETE FROM log";
+            $query = "DELETE FROM logs";
             $statement = $log->prepare($query);
             $row_count = $statement->execute();
             return true;
@@ -85,7 +85,7 @@
     // Query for all log
     function query_log ($log) {
 
-        $query = "SELECT * FROM log";
+        $query = "SELECT * FROM logs";
         $statement = $log->prepare($query);
         $statement->execute();
         return $statement->fetchAll();
@@ -100,7 +100,7 @@
 
     // render_list -- Loop over all of the log to make a bullet list
     function render_log($log) {
-        $list = query_log ($log);
+        $list = query_log($log);
         $text = '<h3>Application History</h3><ul>';
         foreach ($list as $s) {
             $text .= '<li>' . $s['date'] . ', ' . $s['text'] . '</li>';

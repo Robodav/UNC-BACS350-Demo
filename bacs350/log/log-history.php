@@ -6,7 +6,7 @@
     // Connect to the database
     require_once 'log.php';
 
-    add_log($db, "log-history.php page loaded");
+    add_log($log, "log-history.php page loaded");
 
     echo render_log($log);
 

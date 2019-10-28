@@ -1,6 +1,6 @@
 <?php
 
-function add_row($db, $text) {
+function add_row($log, $text) {
     date_default_timezone_set("America/Denver");
     $date = date('Y-m-d g:i:s a');  
     // Add database row
@@ -12,7 +12,7 @@ function add_row($db, $text) {
     $statement->closeCursor();
 }
 
-function add_log($db, $text) {
+function add_log($log, $text) {
     // Show if insert is successful or not
     try {
         // Create a string for "now"
@@ -35,18 +35,18 @@ function add_log($db, $text) {
 }
 
 // Delete all logs
-function delete_logs($db) {
+function clear_log($log) {
     $query = "DELETE FROM logs";
-    $statement = $db->prepare($query);
+    $statement = $log->prepare($query);
     $row_count = $statement->execute();
     return true;
 }
 
 // Query for all logs
-function query_logs($db) {
+function query_logs($log) {
     try {
         $query = "SELECT * FROM logs";
-        $statement = $db->prepare($query);
+        $statement = $log->prepare($query);
         $statement->execute();
         return $statement->fetchAll();
     } catch (PDOException $e) {
@@ -55,17 +55,6 @@ function query_logs($db) {
         die();
     }
     
-}
-
-// render_log_list -- Create a bullet list in HTML
-function render_log($db) {
-    $list = query_logs($db);
-    $text = '<h3>Application History</h3><ul>';
-    foreach ($list as $s) {
-        $text .= '<li>' . $s['date'] . ', ' . $s['text'] . '</li>';
-    }
-    $text .= '</ul>';
-    return $text;     
 }
 
    /* -------------------------------
@@ -97,6 +86,6 @@ function render_log($db) {
 
 
     // Create a database connection
-    $db = bluehost_connect(); 
+    $log = bluehost_connect(); 
 
 ?>

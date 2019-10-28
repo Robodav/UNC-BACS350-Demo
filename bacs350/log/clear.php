@@ -5,7 +5,7 @@
 
     // Log this page hit
     require_once 'log.php';
-    clear_log($db, "demo/23/clear.php page loaded");
+    clear_log($log, "demo/23/clear.php page loaded");
 
     // Redirect to index
     header('Location: index.php');

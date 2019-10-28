@@ -5,7 +5,7 @@
 
     // Log this page hit
     require_once 'log.php';
-    add_log($db, "demo/23/index.php page loaded");
+    add_log($log, "demo/23/index.php page loaded");
 ?>
 
 <h1>Demo 23 - Page Logging Demo</h1>
