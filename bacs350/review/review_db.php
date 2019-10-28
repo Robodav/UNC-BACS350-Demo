@@ -5,12 +5,14 @@
     ------------------------------- */
 
     // Add a new record
-    function add_review($db, $title, $body, $date) {
+    function add_review($db, $designer, $url, $report, $score, $date) {
        try {
-           $query = "INSERT INTO reviews (title, body, date) VALUES (:title, :body, :date);";
+           $query = "INSERT INTO reviews (designer, url, report, score, date) VALUES (:designer, :url, :report, :score, :date);";
            $statement = $db->prepare($query);
-           $statement->bindValue(':title', $title);
-           $statement->bindValue(':body', $body);
+           $statement->bindValue(':designer', $designer);
+           $statement->bindValue(':url', $url);
+           $statement->bindValue(':report', $report);
+           $statement->bindValue(':score', $score);
            $statement->bindValue(':date', $date);
            $statement->execute();
            $statement->closeCursor();
@@ -76,15 +78,16 @@
 
 
     // Update the database
-    function update_review ($db, $id, $title, $body, $date) {
+    function update_review ($db, $designer, $url, $report, $score, $date) {
        try {
         // Modify database row
-        $query = "UPDATE reviews SET title=:title, body=:body, date=:date WHERE id = :id";
+        $query = "UPDATE reviews SET designer=:designer, report=:report, score=:score, date=:date WHERE url = :url";
         $statement = $db->prepare($query);
 
-        $statement->bindValue(':id', $id);
-        $statement->bindValue(':title', $title);
-        $statement->bindValue(':body', $body);
+        $statement->bindValue(':url', $url);
+        $statement->bindValue(':designer', $designer);
+        $statement->bindValue(':report', $report);
+        $statement->bindValue(':score', $score);
         $statement->bindValue(':date', $date);
 
         $statement->execute();

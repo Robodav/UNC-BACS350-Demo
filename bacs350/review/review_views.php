@@ -44,12 +44,15 @@
     function render_reviews($reviews) {
         $html = '';
         foreach($reviews as $row) {
-            $title = $row['title'];
+            $designer = $row['designer'];
             $delete_href = "delete.php?id=$row[id]";
             $edit_href = "update.php?id=$row[id]";
             $body = "
-                <p>Note #$row[id]. $title</p>
-                <p>$row[body]</p>
+                <p>Review for: " . $designer . "</p>
+                <p>Date: " . $row['date'] . "</p>
+                <p>Site: " . $row['url'] . "</p>
+                <p>" . $row['report'] . "</p>
+                <p>Score: " . $row['score'] . "</p>
                 <p>
                     <a class='button' href='$edit_href'>Edit</a>
                     <a class='button' href='$delete_href'>Delete</a>
@@ -62,31 +65,36 @@
 
     // Show form for adding a record
     function edit_review_form($record) {
-        $id    = $record['id'];
+        $designer    = $record['designer'];
         $date  = $record['date'];
-        $title = $record['title'];
-        $body  = $record['body'];
+        $url = $record['url'];
+        $report  = $record['report'];
+        $score = $record['score'];
         $card_title = "Edit Note";
         $card_body = '
             <form action="update.php" method="post">
                 <table class="table table-hover">
                     <tr>
+                        <td><label>Designer:</label></td>
+                        <td><input type="text" name="designer" value="' . $designer . '"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Report:</label></td>
+                        <td><textarea name="report">' . $report . '</textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label>Score:</label></td>
+                        <td><input type="number" name="score" value="' . $score . '"></textarea></td>
+                    </tr>
+                    <tr>
                         <td><label>Date:</label></td>
                         <td><input type="date" name="date" value="' . $date . '"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Title:</label></td>
-                        <td><input type="text" name="title" value="' . $title . '"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Body:</label></td>
-                        <td><textarea name="body">' . $body . '</textarea></td>
                     </tr>
                     <tr>
                         <td><button class="button">Save Record</button></td>
                     </tr>
                 </table>
-                <input type="hidden" name="id" value="' . $id . '">
+                <input type="hidden" name="url" value="' . $url . '">
             </form>
         ';
         return render_card($card_title, $card_body);

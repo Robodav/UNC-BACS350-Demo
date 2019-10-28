@@ -1,38 +1,34 @@
 <?php
 
     // Code to define functions
-    require_once 'notes_views.php';
-    require_once 'notes_db.php';
+    require_once 'review_views.php';
+    require_once 'review_db.php';
 
     include '../log/log.php';
     add_log($log, 'Review update loaded');
 
 
     // Pick out the inputs
-    $id    = filter_input(INPUT_POST, 'id');
-    $title = filter_input(INPUT_POST, 'title');
-    $body  = filter_input(INPUT_POST, 'body');
-    $date  = filter_input(INPUT_POST, 'date');
-
-//        date_default_timezone_set("America/Denver");
-//        $date  = date('Y-m-d g:i:s a');
+    $designer = filter_input(INPUT_POST, 'designer');
+    $url = filter_input(INPUT_POST, 'url');
+    $report = filter_input(INPUT_POST, 'report');
+    $score = filter_input(INPUT_POST, 'score');
+    $date = filter_input(INPUT_POST, 'date');
         
 
     // Gather user input with a form
-    if ($title == '' || $body == '' || $date == '') {
+    if ($designer == '' || $report == '' || $score == '' || $date == '') {
         
         // Form view to add notes
-        $id = filter_input(INPUT_GET, 'id');
-        $note = get_note($db, $id);
-        $edit_form = edit_note_form($note);
+        $edit_form = edit_review_form($note);
 
         // Display the HTML in the page
-        echo render_page('dvandiver', "Edit Note", $edit_form);
+        echo render_page('dvandiver', "Edit Review", $edit_form);
     }
     else {
         
         // Add record and return to list
-        if (update_note ($db, $id, $title, $body, $date))
+        if (update_review($db, $designer, $url, $report, $score, $date))
         {
             header("Location: index.php");
         };

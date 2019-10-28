@@ -41,7 +41,7 @@
     /*
         render_card -- build HTML text for a card
     */
-    function render_card($title, $body, $image) {
+    function render_card($title, $body) {
         return '
             <div class="card">
                 <div class="card-header">
@@ -49,9 +49,6 @@
                 </div>
                 <div class="card-body card-padding">
                     ' . $body . '
-                </div>
-                <div class="card-image">
-                    <img src="' . $image . '" width="200px" padding="10px">
                 </div>
             </div>
         ';

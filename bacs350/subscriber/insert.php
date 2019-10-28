@@ -27,7 +27,7 @@
         $intro = 'No intro';
         $content = "$intro $list $add_form $clear_button";
 
-        echo render_page('UNC BACS 350', "Add Subscriber", $content);
+        echo render_page('dvandiver', "Add Subscriber", $content);
     }
 
 
