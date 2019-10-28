@@ -1,7 +1,6 @@
 <?php
 
     // Code to define functions
-    require_once 'views.php';
     require_once 'notes_views.php';
     require_once 'notes_db.php';
 
@@ -25,7 +24,7 @@
         $edit_form = edit_note_form($note);
 
         // Display the HTML in the page
-        echo render_page('UNC BACS 350', "Edit Note", $edit_form);
+        echo render_page('dvandiver', "Edit Note", $edit_form);
     }
     else {
         
