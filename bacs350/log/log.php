@@ -75,7 +75,7 @@ function query_logs($log) {
 
 
     // Connect to the Bluehost database
-    function bluehost_connect() {
+    function bluehost_logs_connect() {
         $dbname = 'dvandive_logs';
         $username = 'dvandive_robodav';
         $password = 'BACS350';
@@ -86,6 +86,6 @@ function query_logs($log) {
 
 
     // Create a database connection
-    $log = bluehost_connect(); 
+    $log = bluehost_logs_connect(); 
 
 ?>

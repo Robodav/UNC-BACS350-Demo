@@ -4,6 +4,9 @@
     require_once 'notes_views.php';
     require_once 'notes_db.php';
 
+    include '../log/log.php';
+    add_log($log, 'Review update loaded');
+
 
     // Pick out the inputs
     $id    = filter_input(INPUT_POST, 'id');

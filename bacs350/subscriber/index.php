@@ -5,6 +5,9 @@
     // Connect to the subscribers database at Bluehost
     require 'subscriber.php';
 
+    include '../log/log.php';
+    add_log($log, 'Subscribers loaded');
+
     $site_title = 'dvandiver';
     $page_title = 'Subscribers Database';
     

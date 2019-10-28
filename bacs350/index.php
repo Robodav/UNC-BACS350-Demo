@@ -4,6 +4,9 @@
         Create page content by rendering a template.
     */
 
+    include 'log/log.php';
+    add_log($log, 'Main page loaded');
+
     $site_title = 'UNC BACS 350';
     
     $page_title = "Dav's Brain";

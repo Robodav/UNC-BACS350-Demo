@@ -8,6 +8,9 @@
     require_once 'superhero_views.php';
     require_once 'superhero_db.php';
 
+    include '../log/log.php';
+    add_log($log, 'Superheroes loaded');
+
     // Set custom settings
     $site_title = 'dvandiver';
     $page_title = 'Superhero Gallery';

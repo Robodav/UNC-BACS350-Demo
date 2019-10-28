@@ -5,6 +5,9 @@
     require_once 'superhero_views.php';
     require_once 'superhero_db.php';
 
+    include '../log/log.php';
+    add_log($log, 'Superheroes loaded');
+
 
     // Pick out the inputs
     $name = filter_input(INPUT_GET, 'name');

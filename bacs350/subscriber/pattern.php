@@ -3,7 +3,7 @@
     // Start the page
     require_once 'views.php';
 
-    $site_title = 'BACS 350 - Demo Server';
+    $site_title = 'dvandiver - Demo Server';
     $page_title = 'MVC Pattern';
     begin_page($site_title, $page_title);
 

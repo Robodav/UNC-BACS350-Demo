@@ -4,6 +4,9 @@
     require_once 'review_views.php';
     require_once 'review_db.php';
 
+    include '../log/log.php';
+    add_log($log, 'Review insert loaded');
+
 
     // Pick out the inputs fields: designer, url, report, score, date
     $designer = filter_input(INPUT_GET, 'designer');

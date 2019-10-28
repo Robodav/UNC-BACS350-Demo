@@ -5,6 +5,9 @@
     require_once 'subscriber_views.php';
     require_once 'subscriber_db.php';
 
+    include '../log/log.php';
+    add_log($log, 'Subscriber insert loaded');
+
 
     // Pick out the inputs
     $name = filter_input(INPUT_GET, 'name');

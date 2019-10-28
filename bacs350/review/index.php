@@ -1,9 +1,11 @@
 <?php
 
     // Code to define functions
-    require_once 'views.php';
     require_once 'review_views.php';
     require_once 'review_db.php';
+
+    include '../log/log.php';
+    add_log($log, 'Reviews loaded');
 
 
     // List review records
