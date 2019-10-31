@@ -10,7 +10,7 @@
     $id = filter_input(INPUT_GET, 'id');
 
     // Attempt to remove the record
-    delete_note($db, $id);
+    delete_review($db, $id);
 
     // Return to the list
     header("Location: index.php");

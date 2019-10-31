@@ -65,6 +65,7 @@
 
     // Show form for adding a record
     function edit_review_form($record) {
+        $id = $record['id'];
         $designer    = $record['designer'];
         $date  = $record['date'];
         $url = $record['url'];
@@ -77,6 +78,10 @@
                     <tr>
                         <td><label>Designer:</label></td>
                         <td><input type="text" name="designer" value="' . $designer . '"></td>
+                    </tr>
+                    <tr>
+                        <td><label>URL:</label></td>
+                        <td><input type="text" name="url" value="' . $url . '"></td>
                     </tr>
                     <tr>
                         <td><label>Report:</label></td>
@@ -94,7 +99,7 @@
                         <td><button class="button">Save Record</button></td>
                     </tr>
                 </table>
-                <input type="hidden" name="url" value="' . $url . '">
+                <input type="hidden" name="id" value="' . $id . '">
             </form>
         ';
         return render_card($card_title, $card_body);
