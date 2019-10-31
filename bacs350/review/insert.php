@@ -8,7 +8,8 @@
     add_log($log, 'Review insert loaded');
 
 
-    // Pick out the inputs fields: designer, url, report, score, date
+    // Pick out the inputs fields
+    $id = filter_input(INPUT_GET, 'id');
     $designer = filter_input(INPUT_GET, 'designer');
     $url = filter_input(INPUT_GET, 'url');
     $report = filter_input(INPUT_GET, 'report');
