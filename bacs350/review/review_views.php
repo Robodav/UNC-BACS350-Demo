@@ -27,7 +27,7 @@
                         <td><input type="number" name="score"></td>
                     </tr>
                     <tr>
-                        <td><label>Page to Review:</label></td>
+                        <td><label>Review:</label></td>
                         <td><textarea name="report"></textarea></td>
                     </tr>
                     <tr>
