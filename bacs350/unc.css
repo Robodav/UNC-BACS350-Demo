@@ -102,6 +102,11 @@ img {
     /*    box-shadow: 2px 2px 5px #0E3D65;*/
 }
 
+#card img {
+    width: 200px; 
+    padding: 10px;
+}
+
 li {
     margin: 5px 3em;
 }

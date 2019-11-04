@@ -4,7 +4,6 @@
     */
     // Get the render_page and render_card functions
     // require_once '../views.php';
-    require 'db.php';
     require_once 'superhero_views.php';
     require_once 'superhero_db.php';
 
@@ -18,7 +17,7 @@
     $add_button = '<p><a class="button" href="insert.php">Add Superhero</a></p>';
 
     // Get a list of subscribers records
-    $superheroes = query_superheroes($db);
+    $superheroes = list_superheroes($db);
     $superslist = render_superheroes($superheroes);
 
 

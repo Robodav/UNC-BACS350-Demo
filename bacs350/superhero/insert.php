@@ -31,5 +31,13 @@
 
         echo render_page('dvandive', "Add Superhero", $content);
     }
+
+    else {
+
+        if (add_superhero ($db, $name, $description, $image))
+        {
+            header("Location: index.php");
+        }
+    }
  
 ?>

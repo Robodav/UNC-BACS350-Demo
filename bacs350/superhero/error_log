@@ -1,1 +1,4 @@
-[04-Nov-2019 21:45:10 UTC] PHP Fatal error:  Cannot redeclare render_card() (previously declared in /home3/dvandive/public_html/bacs350/views.php:44) in /home3/dvandive/public_html/bacs350/views.php on line 71
+[04-Nov-2019 15:13:55 America/Denver] PHP Fatal error:  Uncaught Error: Call to undefined function query_superheroes() in /home3/dvandive/public_html/bacs350/superhero/index.php:20
+Stack trace:
+#0 {main}
+  thrown in /home3/dvandive/public_html/bacs350/superhero/index.php on line 20

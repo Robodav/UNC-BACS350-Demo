@@ -67,7 +67,7 @@
                     ' . $body . '
                 </div>
                 <div class="card-image">
-                    <img src="' . $image . '" width="200px" padding="10px">
+                    <img src="' . $image . '" alt="superhero image">
                 </div>
             </div>
         ';

@@ -26,13 +26,13 @@
         $html = '';
         foreach($superheroes as $row) {
             $title = $row['name'];
-            $delete = "<a href='delete.php?name=$row[name]'>Delete Record</a>";
+            $delete_href = "delete.php?id=$row[id]";
             $photo = $row['image'];
             $body = "
                 <table class='table table-hover'>
                     <tr><td>Name:</td><td>$title</td></tr>
                     <tr><td>Notes:</td><td>$row[description]</td></tr>
-                    <tr><td>Record $row[id]</td><td>$delete</td></tr>
+                    <tr><td>Record $row[id]</td><td><a class='button' href='$delete_href'>Delete</a></td></tr>
                 </table>";
             $html = $html . render_super_card($title, $body, $photo);
         }

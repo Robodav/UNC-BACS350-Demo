@@ -19,7 +19,7 @@
         } catch (PDOException $e) {
             $error_message = $e->getMessage();
             echo "<p>Error: $error_message</p>";
-            // die();
+            die();
         }
     }
 
@@ -62,9 +62,9 @@
     // Delete Database Record
     function delete_superhero($db, $id) {
         try {
-            $query = "DELETE from superheroes WHERE name = :name";
+            $query = "DELETE from superheroes WHERE id = :id";
             $statement = $db->prepare($query);
-            $statement->bindValue(':name', $id);
+            $statement->bindValue(':id', $id);
             $statement->execute();
             $statement->closeCursor();
             return true;

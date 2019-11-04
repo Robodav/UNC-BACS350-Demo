@@ -7,7 +7,7 @@
     add_log($log, 'Superhero delete loaded');
 
     // Get the email of the record to delete
-    $id = filter_input(INPUT_GET, 'name');
+    $id = filter_input(INPUT_GET, 'id');
 
     // Attempt to remove the record
     delete_superhero($db, $id);
