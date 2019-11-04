@@ -9,6 +9,7 @@
 
 
     // Pick out the inputs
+    $id = filter_input(INPUT_POST, 'id');
     $designer = filter_input(INPUT_POST, 'designer');
     $url = filter_input(INPUT_POST, 'url');
     $report = filter_input(INPUT_POST, 'report');
@@ -17,9 +18,11 @@
         
 
     // Gather user input with a form
-    if ($designer == '' || $report == '' || $score == '' || $date == '') {
+    if ($designer == '' || $url == '' || $report == '' || $score == '' || $date == '') {
         
         // Form view to add notes
+        $id = filter_input(INPUT_GET, 'id');
+        $note = get_review($db, $id);
         $edit_form = edit_review_form($note);
 
         // Display the HTML in the page
@@ -28,7 +31,7 @@
     else {
         
         // Add record and return to list
-        if (update_review($db, $designer, $url, $report, $score, $date))
+        if (update_review($db, $designer, $url, $report, $score, $date, $id))
         {
             header("Location: index.php");
         };

@@ -78,10 +78,10 @@
 
 
     // Update the database
-    function update_review ($db, $designer, $url, $report, $score, $date) {
+    function update_review ($db, $designer, $url, $report, $score, $date, $id) {
        try {
         // Modify database row
-        $query = "UPDATE reviews SET designer=:designer, report=:report, score=:score, date=:date WHERE url = :url";
+        $query = "UPDATE reviews SET designer=:designer, url = :url, report=:report, score=:score, date=:date WHERE id = :id";
         $statement = $db->prepare($query);
 
         $statement->bindValue(':url', $url);
@@ -89,6 +89,7 @@
         $statement->bindValue(':report', $report);
         $statement->bindValue(':score', $score);
         $statement->bindValue(':date', $date);
+        $statement->bindValue('id', $id);
 
         $statement->execute();
         $statement->closeCursor();

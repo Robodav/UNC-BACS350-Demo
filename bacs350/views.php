@@ -54,6 +54,25 @@
         ';
     }
 
+    /*
+        render_card -- build HTML text for a card
+    */
+    function render_super_card($title, $body, $image) {
+        return '
+            <div class="card">
+                <div class="card-header">
+                    ' . $title . '
+                </div>
+                <div class="card-body card-padding">
+                    ' . $body . '
+                </div>
+                <div class="card-image">
+                    <img src="' . $image . '" width="200px" padding="10px">
+                </div>
+            </div>
+        ';
+    }
+
     
     /*
         render_markdown -- Read Markdown Text from file and convert into HTML

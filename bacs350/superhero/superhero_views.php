@@ -17,7 +17,7 @@
             </form>
             ';
         $photo = "";
-        return render_card($title, $body, $photo);
+        return render_super_card($title, $body, $photo);
     }
 
 
@@ -34,29 +34,12 @@
                     <tr><td>Notes:</td><td>$row[description]</td></tr>
                     <tr><td>Record $row[id]</td><td>$delete</td></tr>
                 </table>";
-            $html = $html . render_card($title, $body, $photo);
+            $html = $html . render_super_card($title, $body, $photo);
         }
         return $html;
     }
 
-    /*
-        render_card -- build HTML text for a card
-    */
-    function render_card($title, $body, $image) {
-        return '
-            <div class="card">
-                <div class="card-header">
-                    ' . $title . '
-                </div>
-                <div class="card-body card-padding">
-                    ' . $body . '
-                </div>
-                <div class="card-image">
-                    <img src="' . $image . '" width="200px" padding="10px">
-                </div>
-            </div>
-        ';
-    }
+    
     
     
 ?>

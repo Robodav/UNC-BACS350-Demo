@@ -1,0 +1,1 @@
+[04-Nov-2019 21:45:10 UTC] PHP Fatal error:  Cannot redeclare render_card() (previously declared in /home3/dvandive/public_html/bacs350/views.php:44) in /home3/dvandive/public_html/bacs350/views.php on line 71
