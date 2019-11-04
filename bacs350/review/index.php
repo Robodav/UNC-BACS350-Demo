@@ -18,5 +18,5 @@
 
     // Show the page
     $content = "$add_button $list";
-    echo render_page('dvandiver', "Demo 24 - Design Reviews", $content);
+    echo render_page('dvandiver', "Design Reviews", $content);
 ?>

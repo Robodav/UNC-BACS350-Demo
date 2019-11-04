@@ -7,13 +7,13 @@
     include 'log/log.php';
     add_log($log, 'Main page loaded');
 
-    $site_title = 'UNC BACS 350';
+    $site_title = 'dvandiver';
     
     $page_title = "Dav's Brain";
     
     $content = '
         <p>
-            <a href="..">Home</a>
+            <a href="/">BACS 350 WordPress Blog</a>
         </p>
         <p> 
             This page is the beginning of an ongoing project in BACS 350.
@@ -23,6 +23,9 @@
         </p>
         <p> 
             Different rooms within this PHP app will contain different types of info.
+        </p>
+        <p>
+            The source code is available at <a href="https://github.com/Mark-Seaman/UNC-BACS350-Demo/tree/master/bacs350">BACS 350 Source Code</a>.
         </p>
         
         <ul>
@@ -49,6 +52,9 @@
             </li>
             <li>
                 <a href="notes">Notes</a>
+            </li>
+            <li>
+                <a href="review">Design Reviews</a>
             </li>
         </ul>
     ';
