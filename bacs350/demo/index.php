@@ -139,6 +139,12 @@
             <li>
                 <a href="32">Demo #32 - Notes MVC</a>
             </li>
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+            <li>
+                <a href="35">Demo #35 - User Authentication</a>
+            </li>
 >>>>>>> upstream/master
         </ul>
     ';
