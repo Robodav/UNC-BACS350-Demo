@@ -125,11 +125,8 @@
 
     // Connect to the Bluehost database
     function bluehost_connect() {
+        require_once '../secret_settings.php';
         $dbname = 'dvandive_reviews';
-        $username = 'dvandive_robodav';
-        $password = 'BACS350';
-        $port = '3306';
-        $host = "localhost:$port";
         return review_database($host, $dbname, $username, $password);
     }
 

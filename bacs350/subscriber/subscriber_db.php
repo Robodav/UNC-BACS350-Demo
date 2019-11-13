@@ -93,11 +93,8 @@
 
     // Connect to the Bluehost database
     function bluehost_connect() {
+        require_once '../secret_settings.php';
         $dbname = 'uncobacs_subscribers';
-        $username = 'uncobacs_350';
-        $password = 'BACS_350';
-        $port = '3306';
-        $host = "localhost:$port";
         return subscriber_database($host, $dbname, $username, $password);
     }
 
