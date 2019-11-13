@@ -30,6 +30,9 @@
         
         <ul>
             <li>
+                <a href="team.php">Project Team</a>
+            </li>
+            <li>
                 <a href="https://shrinking-world.com/unc/bacs350">Sensei Class Site</a>
             </li>
             <li>
