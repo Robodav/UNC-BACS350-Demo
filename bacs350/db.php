@@ -12,25 +12,24 @@
 
 
     // Connect to the remote database
-    function remote_connect() {
+    function remote_connect($dbname) {
         // Set up .gitignore to prevent this file in git repo
-        require_once '../secret_settings.php';
+        require_once 'secret_settings.php';
 
-        $dbname = 'dvandive_slides';
         $db_connect = "mysql:host=$host:$port;dbname=$dbname";
         return db_connect($db_connect, $username, $password);
     }
 
 
     // Local Host Database settings
-    function local_connect() {
-        $host = 'localhost';
-        $dbname = 'bacs350';
-        $username = 'root';
-        $password = '';
-        $db_connect = "mysql:host=$host;dbname=$dbname";
-        return db_connect($db_connect, $username, $password);
-    }
+    // function local_connect() {
+    //     $host = 'localhost';
+    //     $dbname = 'bacs350';
+    //     $username = 'root';
+    //     $password = '';
+    //     $db_connect = "mysql:host=$host;dbname=$dbname";
+    //     return db_connect($db_connect, $username, $password);
+    // }
 
 
     // Open the database or die

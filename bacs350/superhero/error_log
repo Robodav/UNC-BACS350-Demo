@@ -1,0 +1,16 @@
+[13-Nov-2019 22:19:19 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function remote_connect(), 0 passed in /home3/dvandive/public_html/bacs350/db.php on line 58 and exactly 1 expected in /home3/dvandive/public_html/bacs350/db.php:15
+Stack trace:
+#0 /home3/dvandive/public_html/bacs350/db.php(58): remote_connect()
+#1 /home3/dvandive/public_html/bacs350/db.php(64): connect_database()
+#2 /home3/dvandive/public_html/bacs350/superhero/superhero_db.php(79): require_once('/home3/dvandive...')
+#3 /home3/dvandive/public_html/bacs350/superhero/index.php(8): require_once('/home3/dvandive...')
+#4 {main}
+  thrown in /home3/dvandive/public_html/bacs350/db.php on line 15
+[13-Nov-2019 22:19:20 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function remote_connect(), 0 passed in /home3/dvandive/public_html/bacs350/db.php on line 58 and exactly 1 expected in /home3/dvandive/public_html/bacs350/db.php:15
+Stack trace:
+#0 /home3/dvandive/public_html/bacs350/db.php(58): remote_connect()
+#1 /home3/dvandive/public_html/bacs350/db.php(64): connect_database()
+#2 /home3/dvandive/public_html/bacs350/superhero/superhero_db.php(79): require_once('/home3/dvandive...')
+#3 /home3/dvandive/public_html/bacs350/superhero/index.php(8): require_once('/home3/dvandive...')
+#4 {main}
+  thrown in /home3/dvandive/public_html/bacs350/db.php on line 15

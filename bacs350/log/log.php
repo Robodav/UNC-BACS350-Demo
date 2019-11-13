@@ -76,7 +76,7 @@ function query_logs($log) {
 
     // Connect to the Bluehost database
     function bluehost_logs_connect() {
-        require_once '../secret_settings.php'
+        require_once '../secret_settings.php';
         $dbname = 'dvandive_logs';
         return log_database($host, $dbname, $username, $password);
     }
