@@ -23,7 +23,6 @@
                 <td><a href="https://matthewbradowwebdesign.com/bacs350/">Domain</a></td>
                 <td><a href="https://github.com/matthew-bradow/BACS350">Github</a></td>
                 <td><a href="https://github.com/matthew-bradow/BACS350/issues">Issues</a></td>
-                <td>Unknown</td>
             </tr>
             <tr>
                 <td>Devin Panikkar</td>
