@@ -4,7 +4,7 @@
         Create page content by rendering a template.
     */
 
-    $site_title = 'UNC BACS 350';
+    $site_title = 'dvandiver';
     
     $page_title = "Project Team";
     
@@ -18,32 +18,33 @@
             <th>Github</th>
             <th>Issues</th>
             <tr>
-                <td>Dyani Dussault</td>
-                <td>dyani.dussault@unco.edu</td>
-                <td><a href="http://dyanidussault.com/bacs350/">Domain</a></td>
+                <td>Matthew Bradow</td>
+                <td>brad8259@bears.unco.edu</td>
+                <td><a href="https://matthewbradowwebdesign.com/bacs350/">Domain</a></td>
+                <td><a href="https://github.com/matthew-bradow/BACS350">Github</a></td>
+                <td><a href="https://github.com/matthew-bradow/BACS350/issues">Issues</a></td>
                 <td>Unknown</td>
-                <td>Unknown</td>
             </tr>
             <tr>
-                <td>Madison Spillman</td>
-                <td>spil6540@bears.unco.edu</td>
-                <td><a href="https://spillmandesigns.com/bacs350/">Domain</a></td>
-                <td><a href="https://github.com/spillman66">Github</a></td>
-                <td><a href="https://github.com/spillman66/issues">Issues</a></td>
+                <td>Devin Panikkar</td>
+                <td>devin.panikkar@unco.edu</td>
+                <td><a href="https://devin-panikkar.com/bacs350/">Domain</a></td>
+                <td><a href="https://github.com/dkpanikkar/UNC-BACS350-2019-Fall">Github</a></td>
+                <td><a href="https://github.com/dkpanikkar/UNC-BACS350-2019-Fall/issues">Issues</a></td>
             </tr>
             <tr>
-                <td>Caleb Leonard</td>
-                <td>lovehaiti339@gmail.com</td>
-                <td><a href="https://findingfocusministries.com/bacs350/">Domain</a></td>
-                <td><a href="https://github.com/leon1583/UNC-BACS350-2019-Fall">Github</a></td>
-                <td><a href="https://github.com/leon1583/UNC-BACS350-2019-Fall/issues">Issues</a></td>
+                <td>Kevin Ritter</td>
+                <td>ritt9966@bears.unco.edu</td>
+                <td><a href="https://galifreyanwriter.com/bacs350/">Domain</a></td>
+                <td><a href="https://github.com/KevinBRitter/bacs350Public">Github</a></td>
+                <td><a href="https://github.com/KevinBRitter/bacs350Public/issues">Issues</a></td>
             </tr>
             <tr>
-                <td>Mark Seaman</td>
-                <td>mark.seaman@unco.edu</td>
-                <td><a href="https://unco-bacs.org/bacs350/">Domain</a></td>
-                <td><a href="https://github.com/Mark-Seaman/UNC-BACS350-Demo">Github</a></td>
-                <td><a href="https://github.com/Mark-Seaman/UNC-BACS350-Demo/issues">Issues</a></td>
+                <td>David Vandiver</td>
+                <td>vand2653@bears.unco.edu</td>
+                <td><a href="https://dvandiver.com/bacs350/">Domain</a></td>
+                <td><a href="https://github.com/Robodav/UNC-BACS350-Demo">Github</a></td>
+                <td><a href="https://github.com/Robodav/UNC-BACS350-Demo/issues">Issues</a></td>
             </tr>
         </table>
 
