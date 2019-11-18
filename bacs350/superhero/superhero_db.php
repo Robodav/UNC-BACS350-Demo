@@ -76,7 +76,30 @@
     }
 
     // Create a connection
-    require_once '../db.php';
-    $db = remote_connect('dvandive_superheroes'); 
+    /* -------------------------------
+        DATABASE CONNECT
+    ------------------------------- */
+
+    // Connect to Bluehost database 
+    function superhero_database($host, $dbname, $username, $password) {
+        try {
+            $db_connect = "mysql:host=$host;dbname=$dbname";
+            return new PDO($db_connect, $username, $password);
+        } catch (PDOException $e) {
+            $error_message = $e->getMessage();
+            echo "<p>Error: $error_message</p>";
+            die();
+        }
+    }
+
+
+    // Connect to the Bluehost database
+    function bluehost_connect() {
+        require_once '../secret_settings.php';
+        $dbname = 'dvandive_superheroes';
+        return superhero_database($host, $dbname, $username, $password);
+    }
+
+    $db = bluehost_connect(); 
 
 ?>

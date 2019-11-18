@@ -94,7 +94,7 @@
     // Connect to the Bluehost database
     function bluehost_connect() {
         require_once '../secret_settings.php';
-        $dbname = 'uncobacs_subscribers';
+        $dbname = 'dvandive_subscribers';
         return subscriber_database($host, $dbname, $username, $password);
     }
 

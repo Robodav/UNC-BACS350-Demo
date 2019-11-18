@@ -24,7 +24,6 @@
     // Build a list of subscribers in HTML
     $content = "$superslist $add_button";
 
-    echo $list;
     // Create HTML and output the page
     echo render_page($site_title, $page_title, $content);
 ?>
