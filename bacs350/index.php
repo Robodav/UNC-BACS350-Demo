@@ -4,8 +4,8 @@
         Create page content by rendering a template.
     */
 
-    include 'log/log.php';
-    add_log($log, 'Main page loaded');
+    // include 'log/log.php';
+    // add_log($log, 'Main page loaded');
 
     $site_title = 'dvandiver';
     
@@ -75,7 +75,7 @@
     $content = render_template ("home.html", array());
 
     $settings = array(
-        "site_title" => "UNC BACS 350 Demo",
+        "site_title" => "dvandiver",
         "page_title" => "Home Page", 
         'user'       => "",
         "content"    => $content);

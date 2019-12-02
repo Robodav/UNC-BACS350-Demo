@@ -55,7 +55,7 @@
             return local_connect();
         }
         else {
-            return remote_connect();
+            return remote_connect($dbname);
         }
     }
 
