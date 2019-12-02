@@ -21,9 +21,6 @@
                 <a href="01">Project #1 - Setup Web Hosting</a>
             </li>
             <li>
-<<<<<<< HEAD
-                <a href="02">Project #2 - Page Template</a>
-=======
                 <a href="..">Project #2 - Page Template - Home Page</a>
             </li>
             <li>
@@ -37,7 +34,6 @@
             </li>
             <li>
                 <a href="../subscriber">Project #6 - Subscriber Database</a>
->>>>>>> upstream/master
             </li>
             <li>
                 <a href="../superhero">Project #7 - Superhero Database</a>

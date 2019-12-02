@@ -143,7 +143,19 @@
 >>>>>>> upstream/master
 =======
             <li>
-                <a href="35">Demo #35 - User Authentication</a>
+                <a href="33">Demo #33 - User Authentication Library</a>
+            </li>
+            <li>
+                <a href="34">Demo #34 - Notes with Auth</a>
+            </li>
+             <li>
+                <a href="35">Demo #35 - View Library</a>
+            </li>
+            <li>
+                <a href="38">Demo #38 - Code Generator</a>
+            </li>
+            <li>
+                <a href="2018">Templates from 2018</a>
             </li>
 >>>>>>> upstream/master
         </ul>
